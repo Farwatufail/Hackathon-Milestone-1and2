@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Static Resume Builder By Farwa Tufail</h1>
+    <form id="resume-Form">
+        <fieldset> 
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="name">Name:</label>
+            <input type="text"id="name"name="name"required><br>
+
+
+            <label for="phone">Contact-No:</label>
+            <input type="tel"id="phone"name="phone"required><br>
+
+            <label for="email">Email:</label>
+            <input type="email"id="email"name="email"required><br>
+
+ <!--Profie Picture  -->
+         <label for="profilepicture">Profile Picture</label>
+         <input type="file"id="profilepicture"name="profilepicture"accept="Image/*"required>
+       </fieldset>
+        
+        <fieldset>
+           <legend>EDUCATION</legend>
+           <label for="educaton">Qualification</label>
+           <textarea id="educaton"name="educaton"row="4"required></textarea><br>
+        </fieldset> 
+
+        <fieldset>
+           <legend>SKILLS</legend>
+           <label for="skills">Expertise</label>
+         <textarea id="expertise"name="expertise"row="4"required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>EXPERIENCE</legend>
+            <label for="experience">Proficient</label>
+          <textarea id="experience"name="experience"row="4"required></textarea><br>
+         </fieldset>
+  
+           <button type ="submit">Generate Resume Below</button>
+    </form><br>
+
+    <div id="resumeOutput">
+        <!-- Resume Will Be Generated Below -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
